@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 250px;
+  margin: 5px;
+}
+
+
+.App-header {
+  border-bottom: 3px solid red;
+  display: flex;
+}
+
+.App-header h1{
+  margin: auto 0;
+  color: red;
+}
+
+.App-body p {
+  text-align: start;
+  margin: 50px;
+}
+
+.App-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-top: 3px solid red;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
