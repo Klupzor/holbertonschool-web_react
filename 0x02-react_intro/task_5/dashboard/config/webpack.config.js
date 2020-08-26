@@ -26,11 +26,12 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
-          'file-loader',
-          { loader: 'image-webpack-loader', options: { disable: true } }
-        ]
+          {
+            loader: 'file-loader',
+          },
+        ],
       }
     ]
   },
