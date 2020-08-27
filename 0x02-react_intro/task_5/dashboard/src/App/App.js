@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>School dashboard</h1>
       </header>
-      <div className="App-body">
+      <div className="App-body" id="app_body">
         <p>Login to access the full dashboard</p>
         <label>Email: <input type="text" name="email"></input></label>
         <label>Password: <input type="password" name="password"></input></label>
