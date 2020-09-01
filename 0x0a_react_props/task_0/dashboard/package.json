@@ -1,7 +1,7 @@
 {
-  "name": "react_task_5",
+  "name": "react_task_0",
   "version": "1.0.0",
-  "description": "react_task_5",
+  "description": "react_task_0",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.js --mode development --open --hot",
