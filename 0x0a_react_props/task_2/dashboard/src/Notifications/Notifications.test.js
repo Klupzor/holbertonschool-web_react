@@ -8,7 +8,7 @@ describe('Notifications', () => {
         expect(wrapper.exists()).toBe(true);
     });
     test('renders three list items', () => {
-        const items = wrapper.find('li')
+        const items = wrapper.find('NotificationItem')
         expect(items).toHaveLength(3);
     });
     test('renders the text', () => {

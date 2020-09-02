@@ -2,10 +2,10 @@
     border: 2px solid blue;
 }
 
-ul li[data-priority='default'] {
+.Notifications ul li[data-priority='default'] {
     color: blue;
 }
   
-ul li[data-priority='urgent'] {
+.Notifications ul li[data-priority='urgent'] {
     color: red;
 }
