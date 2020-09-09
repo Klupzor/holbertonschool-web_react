@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './Notifications.css';
 import { getLatestNotification } from '../utils/utils';
 import NotificationItem from './NotificationItem'
+import PropTypes from 'prop-types';
 
-function Notifications() {
+
+function Notifications({ displayDrawer }) {
   return (
-    <div className="Notifications">
+    <div className='notification-container'>
+    <div className='menuItem'>Your Notifications</div>
+    <div className="Notifications" style={displayDrawer ? {} : {display: 'none'}}>
       <p>Here is the list of notifications</p>
       <ul>
       <NotificationItem type='default' value='New course available' />
@@ -30,7 +34,16 @@ function Notifications() {
         />
       </button>
     </div>
+    </div>
   );
 }
+
+Notifications.propTypes = {
+  displayDrawer: PropTypes.bool
+};
+
+Notifications.defaultProps = {
+  displayDrawer: false
+};
 
 export default Notifications;
